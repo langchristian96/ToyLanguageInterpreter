@@ -1,0 +1,1054 @@
+ID: 1
+Exe Stack:
+{Forking statement: {{Forking statement: {{{Locking: x;Write heap {Variable name: v1Expression: Read heap:v1-1}};Unlocking: x}};{{Locking: x;Write heap {Variable name: v1Expression: Read heap:v1+1}};Unlocking: x}}};{New Lock: q;{Forking statement: {{Forking statement: {{Locking: q;{Write heap {Variable name: v2Expression: Read heap:v2+5};Unlocking: q}}};{{Assign Stmt:{m=100};Locking: q};{Write heap {Variable name: v2Expression: Read heap:v2+1};Unlocking: q}}}};{Assign Stmt:{z=200};{Assign Stmt:{z=300};{Assign Stmt:{z=400};{Assign Stmt:{z=500};{Locking: x;{Read heap:v1;{Unlocking: x;{Locking: q;{Read heap:v2;Unlocking: q}}}}}}}}}}}}
+{{New Statement: {Variable name: v1 Expression: 20};New Statement: {Variable name: v2 Expression: 30}};New Lock: x}
+Symbol Table: 
+Output: 
+FileTable: 
+Heap: 
+Lock: 
+ID: 1
+Exe Stack:
+{Forking statement: {{Forking statement: {{{Locking: x;Write heap {Variable name: v1Expression: Read heap:v1-1}};Unlocking: x}};{{Locking: x;Write heap {Variable name: v1Expression: Read heap:v1+1}};Unlocking: x}}};{New Lock: q;{Forking statement: {{Forking statement: {{Locking: q;{Write heap {Variable name: v2Expression: Read heap:v2+5};Unlocking: q}}};{{Assign Stmt:{m=100};Locking: q};{Write heap {Variable name: v2Expression: Read heap:v2+1};Unlocking: q}}}};{Assign Stmt:{z=200};{Assign Stmt:{z=300};{Assign Stmt:{z=400};{Assign Stmt:{z=500};{Locking: x;{Read heap:v1;{Unlocking: x;{Locking: q;{Read heap:v2;Unlocking: q}}}}}}}}}}}}
+New Lock: x
+{New Statement: {Variable name: v1 Expression: 20};New Statement: {Variable name: v2 Expression: 30}}
+Symbol Table: 
+Output: 
+FileTable: 
+Heap: 
+Lock: 
+ID: 1
+Exe Stack:
+{Forking statement: {{Forking statement: {{{Locking: x;Write heap {Variable name: v1Expression: Read heap:v1-1}};Unlocking: x}};{{Locking: x;Write heap {Variable name: v1Expression: Read heap:v1+1}};Unlocking: x}}};{New Lock: q;{Forking statement: {{Forking statement: {{Locking: q;{Write heap {Variable name: v2Expression: Read heap:v2+5};Unlocking: q}}};{{Assign Stmt:{m=100};Locking: q};{Write heap {Variable name: v2Expression: Read heap:v2+1};Unlocking: q}}}};{Assign Stmt:{z=200};{Assign Stmt:{z=300};{Assign Stmt:{z=400};{Assign Stmt:{z=500};{Locking: x;{Read heap:v1;{Unlocking: x;{Locking: q;{Read heap:v2;Unlocking: q}}}}}}}}}}}}
+New Lock: x
+New Statement: {Variable name: v2 Expression: 30}
+New Statement: {Variable name: v1 Expression: 20}
+Symbol Table: 
+Output: 
+FileTable: 
+Heap: 
+Lock: 
+ID: 1
+Exe Stack:
+{Forking statement: {{Forking statement: {{{Locking: x;Write heap {Variable name: v1Expression: Read heap:v1-1}};Unlocking: x}};{{Locking: x;Write heap {Variable name: v1Expression: Read heap:v1+1}};Unlocking: x}}};{New Lock: q;{Forking statement: {{Forking statement: {{Locking: q;{Write heap {Variable name: v2Expression: Read heap:v2+5};Unlocking: q}}};{{Assign Stmt:{m=100};Locking: q};{Write heap {Variable name: v2Expression: Read heap:v2+1};Unlocking: q}}}};{Assign Stmt:{z=200};{Assign Stmt:{z=300};{Assign Stmt:{z=400};{Assign Stmt:{z=500};{Locking: x;{Read heap:v1;{Unlocking: x;{Locking: q;{Read heap:v2;Unlocking: q}}}}}}}}}}}}
+New Lock: x
+New Statement: {Variable name: v2 Expression: 30}
+Symbol Table: 
+v1->1
+Output: 
+FileTable: 
+Heap: 
+1->20
+Lock: 
+ID: 1
+Exe Stack:
+{Forking statement: {{Forking statement: {{{Locking: x;Write heap {Variable name: v1Expression: Read heap:v1-1}};Unlocking: x}};{{Locking: x;Write heap {Variable name: v1Expression: Read heap:v1+1}};Unlocking: x}}};{New Lock: q;{Forking statement: {{Forking statement: {{Locking: q;{Write heap {Variable name: v2Expression: Read heap:v2+5};Unlocking: q}}};{{Assign Stmt:{m=100};Locking: q};{Write heap {Variable name: v2Expression: Read heap:v2+1};Unlocking: q}}}};{Assign Stmt:{z=200};{Assign Stmt:{z=300};{Assign Stmt:{z=400};{Assign Stmt:{z=500};{Locking: x;{Read heap:v1;{Unlocking: x;{Locking: q;{Read heap:v2;Unlocking: q}}}}}}}}}}}}
+New Lock: x
+Symbol Table: 
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->20
+2->30
+Lock: 
+ID: 1
+Exe Stack:
+{Forking statement: {{Forking statement: {{{Locking: x;Write heap {Variable name: v1Expression: Read heap:v1-1}};Unlocking: x}};{{Locking: x;Write heap {Variable name: v1Expression: Read heap:v1+1}};Unlocking: x}}};{New Lock: q;{Forking statement: {{Forking statement: {{Locking: q;{Write heap {Variable name: v2Expression: Read heap:v2+5};Unlocking: q}}};{{Assign Stmt:{m=100};Locking: q};{Write heap {Variable name: v2Expression: Read heap:v2+1};Unlocking: q}}}};{Assign Stmt:{z=200};{Assign Stmt:{z=300};{Assign Stmt:{z=400};{Assign Stmt:{z=500};{Locking: x;{Read heap:v1;{Unlocking: x;{Locking: q;{Read heap:v2;Unlocking: q}}}}}}}}}}}}
+Symbol Table: 
+x->1
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->20
+2->30
+Lock: 
+1->-1
+ID: 1
+Exe Stack:
+{New Lock: q;{Forking statement: {{Forking statement: {{Locking: q;{Write heap {Variable name: v2Expression: Read heap:v2+5};Unlocking: q}}};{{Assign Stmt:{m=100};Locking: q};{Write heap {Variable name: v2Expression: Read heap:v2+1};Unlocking: q}}}};{Assign Stmt:{z=200};{Assign Stmt:{z=300};{Assign Stmt:{z=400};{Assign Stmt:{z=500};{Locking: x;{Read heap:v1;{Unlocking: x;{Locking: q;{Read heap:v2;Unlocking: q}}}}}}}}}}}
+Forking statement: {{Forking statement: {{{Locking: x;Write heap {Variable name: v1Expression: Read heap:v1-1}};Unlocking: x}};{{Locking: x;Write heap {Variable name: v1Expression: Read heap:v1+1}};Unlocking: x}}}
+Symbol Table: 
+x->1
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->20
+2->30
+Lock: 
+1->-1
+ID: 1
+Exe Stack:
+{New Lock: q;{Forking statement: {{Forking statement: {{Locking: q;{Write heap {Variable name: v2Expression: Read heap:v2+5};Unlocking: q}}};{{Assign Stmt:{m=100};Locking: q};{Write heap {Variable name: v2Expression: Read heap:v2+1};Unlocking: q}}}};{Assign Stmt:{z=200};{Assign Stmt:{z=300};{Assign Stmt:{z=400};{Assign Stmt:{z=500};{Locking: x;{Read heap:v1;{Unlocking: x;{Locking: q;{Read heap:v2;Unlocking: q}}}}}}}}}}}
+Symbol Table: 
+x->1
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->20
+2->30
+Lock: 
+1->-1
+ID: 2
+Exe Stack:
+{Forking statement: {{{Locking: x;Write heap {Variable name: v1Expression: Read heap:v1-1}};Unlocking: x}};{{Locking: x;Write heap {Variable name: v1Expression: Read heap:v1+1}};Unlocking: x}}
+Symbol Table: 
+x->1
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->20
+2->30
+Lock: 
+1->-1
+ID: 1
+Exe Stack:
+{Forking statement: {{Forking statement: {{Locking: q;{Write heap {Variable name: v2Expression: Read heap:v2+5};Unlocking: q}}};{{Assign Stmt:{m=100};Locking: q};{Write heap {Variable name: v2Expression: Read heap:v2+1};Unlocking: q}}}};{Assign Stmt:{z=200};{Assign Stmt:{z=300};{Assign Stmt:{z=400};{Assign Stmt:{z=500};{Locking: x;{Read heap:v1;{Unlocking: x;{Locking: q;{Read heap:v2;Unlocking: q}}}}}}}}}}
+New Lock: q
+Symbol Table: 
+x->1
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->20
+2->30
+Lock: 
+1->-1
+ID: 2
+Exe Stack:
+{{Locking: x;Write heap {Variable name: v1Expression: Read heap:v1+1}};Unlocking: x}
+Forking statement: {{{Locking: x;Write heap {Variable name: v1Expression: Read heap:v1-1}};Unlocking: x}}
+Symbol Table: 
+x->1
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->20
+2->30
+Lock: 
+1->-1
+ID: 1
+Exe Stack:
+{Forking statement: {{Forking statement: {{Locking: q;{Write heap {Variable name: v2Expression: Read heap:v2+5};Unlocking: q}}};{{Assign Stmt:{m=100};Locking: q};{Write heap {Variable name: v2Expression: Read heap:v2+1};Unlocking: q}}}};{Assign Stmt:{z=200};{Assign Stmt:{z=300};{Assign Stmt:{z=400};{Assign Stmt:{z=500};{Locking: x;{Read heap:v1;{Unlocking: x;{Locking: q;{Read heap:v2;Unlocking: q}}}}}}}}}}
+Symbol Table: 
+q->2
+x->1
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->20
+2->30
+Lock: 
+1->-1
+2->-1
+ID: 2
+Exe Stack:
+{{Locking: x;Write heap {Variable name: v1Expression: Read heap:v1+1}};Unlocking: x}
+Symbol Table: 
+x->1
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->20
+2->30
+Lock: 
+1->-1
+2->-1
+ID: 3
+Exe Stack:
+{{Locking: x;Write heap {Variable name: v1Expression: Read heap:v1-1}};Unlocking: x}
+Symbol Table: 
+x->1
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->20
+2->30
+Lock: 
+1->-1
+2->-1
+ID: 1
+Exe Stack:
+{Assign Stmt:{z=200};{Assign Stmt:{z=300};{Assign Stmt:{z=400};{Assign Stmt:{z=500};{Locking: x;{Read heap:v1;{Unlocking: x;{Locking: q;{Read heap:v2;Unlocking: q}}}}}}}}}
+Forking statement: {{Forking statement: {{Locking: q;{Write heap {Variable name: v2Expression: Read heap:v2+5};Unlocking: q}}};{{Assign Stmt:{m=100};Locking: q};{Write heap {Variable name: v2Expression: Read heap:v2+1};Unlocking: q}}}}
+Symbol Table: 
+q->2
+x->1
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->20
+2->30
+Lock: 
+1->-1
+2->-1
+ID: 2
+Exe Stack:
+Unlocking: x
+{Locking: x;Write heap {Variable name: v1Expression: Read heap:v1+1}}
+Symbol Table: 
+x->1
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->20
+2->30
+Lock: 
+1->-1
+2->-1
+ID: 3
+Exe Stack:
+Unlocking: x
+{Locking: x;Write heap {Variable name: v1Expression: Read heap:v1-1}}
+Symbol Table: 
+x->1
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->20
+2->30
+Lock: 
+1->-1
+2->-1
+ID: 1
+Exe Stack:
+{Assign Stmt:{z=200};{Assign Stmt:{z=300};{Assign Stmt:{z=400};{Assign Stmt:{z=500};{Locking: x;{Read heap:v1;{Unlocking: x;{Locking: q;{Read heap:v2;Unlocking: q}}}}}}}}}
+Symbol Table: 
+q->2
+x->1
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->20
+2->30
+Lock: 
+1->-1
+2->-1
+ID: 2
+Exe Stack:
+Unlocking: x
+Write heap {Variable name: v1Expression: Read heap:v1+1}
+Locking: x
+Symbol Table: 
+x->1
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->20
+2->30
+Lock: 
+1->-1
+2->-1
+ID: 3
+Exe Stack:
+Unlocking: x
+Write heap {Variable name: v1Expression: Read heap:v1-1}
+Locking: x
+Symbol Table: 
+x->1
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->20
+2->30
+Lock: 
+1->-1
+2->-1
+ID: 4
+Exe Stack:
+{Forking statement: {{Locking: q;{Write heap {Variable name: v2Expression: Read heap:v2+5};Unlocking: q}}};{{Assign Stmt:{m=100};Locking: q};{Write heap {Variable name: v2Expression: Read heap:v2+1};Unlocking: q}}}
+Symbol Table: 
+q->2
+x->1
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->20
+2->30
+Lock: 
+1->-1
+2->-1
+ID: 1
+Exe Stack:
+{Assign Stmt:{z=300};{Assign Stmt:{z=400};{Assign Stmt:{z=500};{Locking: x;{Read heap:v1;{Unlocking: x;{Locking: q;{Read heap:v2;Unlocking: q}}}}}}}}
+Assign Stmt:{z=200}
+Symbol Table: 
+q->2
+x->1
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->20
+2->30
+Lock: 
+1->2
+2->-1
+ID: 2
+Exe Stack:
+Unlocking: x
+Write heap {Variable name: v1Expression: Read heap:v1+1}
+Symbol Table: 
+x->1
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->20
+2->30
+Lock: 
+1->2
+2->-1
+ID: 3
+Exe Stack:
+Unlocking: x
+Write heap {Variable name: v1Expression: Read heap:v1-1}
+Locking: x
+Symbol Table: 
+x->1
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->20
+2->30
+Lock: 
+1->2
+2->-1
+ID: 4
+Exe Stack:
+{{Assign Stmt:{m=100};Locking: q};{Write heap {Variable name: v2Expression: Read heap:v2+1};Unlocking: q}}
+Forking statement: {{Locking: q;{Write heap {Variable name: v2Expression: Read heap:v2+5};Unlocking: q}}}
+Symbol Table: 
+q->2
+x->1
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->20
+2->30
+Lock: 
+1->2
+2->-1
+ID: 1
+Exe Stack:
+{Assign Stmt:{z=300};{Assign Stmt:{z=400};{Assign Stmt:{z=500};{Locking: x;{Read heap:v1;{Unlocking: x;{Locking: q;{Read heap:v2;Unlocking: q}}}}}}}}
+Symbol Table: 
+q->2
+x->1
+z->200
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->21
+2->30
+Lock: 
+1->2
+2->-1
+ID: 2
+Exe Stack:
+Unlocking: x
+Symbol Table: 
+x->1
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->21
+2->30
+Lock: 
+1->2
+2->-1
+ID: 3
+Exe Stack:
+Unlocking: x
+Write heap {Variable name: v1Expression: Read heap:v1-1}
+Locking: x
+Symbol Table: 
+x->1
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->21
+2->30
+Lock: 
+1->2
+2->-1
+ID: 4
+Exe Stack:
+{{Assign Stmt:{m=100};Locking: q};{Write heap {Variable name: v2Expression: Read heap:v2+1};Unlocking: q}}
+Symbol Table: 
+q->2
+x->1
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->21
+2->30
+Lock: 
+1->2
+2->-1
+ID: 5
+Exe Stack:
+{Locking: q;{Write heap {Variable name: v2Expression: Read heap:v2+5};Unlocking: q}}
+Symbol Table: 
+q->2
+x->1
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->21
+2->30
+Lock: 
+1->2
+2->-1
+ID: 1
+Exe Stack:
+{Assign Stmt:{z=400};{Assign Stmt:{z=500};{Locking: x;{Read heap:v1;{Unlocking: x;{Locking: q;{Read heap:v2;Unlocking: q}}}}}}}
+Assign Stmt:{z=300}
+Symbol Table: 
+q->2
+x->1
+z->200
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->21
+2->30
+Lock: 
+1->3
+2->-1
+ID: 2
+Exe Stack:
+Symbol Table: 
+x->1
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->21
+2->30
+Lock: 
+1->3
+2->-1
+ID: 3
+Exe Stack:
+Unlocking: x
+Write heap {Variable name: v1Expression: Read heap:v1-1}
+Symbol Table: 
+x->1
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->21
+2->30
+Lock: 
+1->3
+2->-1
+ID: 4
+Exe Stack:
+{Write heap {Variable name: v2Expression: Read heap:v2+1};Unlocking: q}
+{Assign Stmt:{m=100};Locking: q}
+Symbol Table: 
+q->2
+x->1
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->21
+2->30
+Lock: 
+1->3
+2->-1
+ID: 5
+Exe Stack:
+{Write heap {Variable name: v2Expression: Read heap:v2+5};Unlocking: q}
+Locking: q
+Symbol Table: 
+q->2
+x->1
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->21
+2->30
+Lock: 
+1->3
+2->-1
+ID: 1
+Exe Stack:
+{Assign Stmt:{z=400};{Assign Stmt:{z=500};{Locking: x;{Read heap:v1;{Unlocking: x;{Locking: q;{Read heap:v2;Unlocking: q}}}}}}}
+Symbol Table: 
+q->2
+x->1
+z->300
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->20
+2->30
+Lock: 
+1->3
+2->5
+ID: 3
+Exe Stack:
+Unlocking: x
+Symbol Table: 
+x->1
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->20
+2->30
+Lock: 
+1->3
+2->5
+ID: 4
+Exe Stack:
+{Write heap {Variable name: v2Expression: Read heap:v2+1};Unlocking: q}
+Locking: q
+Assign Stmt:{m=100}
+Symbol Table: 
+q->2
+x->1
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->20
+2->30
+Lock: 
+1->3
+2->5
+ID: 5
+Exe Stack:
+{Write heap {Variable name: v2Expression: Read heap:v2+5};Unlocking: q}
+Symbol Table: 
+q->2
+x->1
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->20
+2->30
+Lock: 
+1->3
+2->5
+ID: 1
+Exe Stack:
+{Assign Stmt:{z=500};{Locking: x;{Read heap:v1;{Unlocking: x;{Locking: q;{Read heap:v2;Unlocking: q}}}}}}
+Assign Stmt:{z=400}
+Symbol Table: 
+q->2
+x->1
+z->300
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->20
+2->30
+Lock: 
+1->-1
+2->5
+ID: 3
+Exe Stack:
+Symbol Table: 
+x->1
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->20
+2->30
+Lock: 
+1->-1
+2->5
+ID: 4
+Exe Stack:
+{Write heap {Variable name: v2Expression: Read heap:v2+1};Unlocking: q}
+Locking: q
+Symbol Table: 
+q->2
+x->1
+v1->1
+v2->2
+m->100
+Output: 
+FileTable: 
+Heap: 
+1->20
+2->30
+Lock: 
+1->-1
+2->5
+ID: 5
+Exe Stack:
+Unlocking: q
+Write heap {Variable name: v2Expression: Read heap:v2+5}
+Symbol Table: 
+q->2
+x->1
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->20
+2->30
+Lock: 
+1->-1
+2->5
+ID: 1
+Exe Stack:
+{Assign Stmt:{z=500};{Locking: x;{Read heap:v1;{Unlocking: x;{Locking: q;{Read heap:v2;Unlocking: q}}}}}}
+Symbol Table: 
+q->2
+x->1
+z->400
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->20
+2->35
+Lock: 
+1->-1
+2->5
+ID: 4
+Exe Stack:
+{Write heap {Variable name: v2Expression: Read heap:v2+1};Unlocking: q}
+Locking: q
+Symbol Table: 
+q->2
+x->1
+v1->1
+v2->2
+m->100
+Output: 
+FileTable: 
+Heap: 
+1->20
+2->35
+Lock: 
+1->-1
+2->5
+ID: 5
+Exe Stack:
+Unlocking: q
+Symbol Table: 
+q->2
+x->1
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->20
+2->35
+Lock: 
+1->-1
+2->5
+ID: 1
+Exe Stack:
+{Locking: x;{Read heap:v1;{Unlocking: x;{Locking: q;{Read heap:v2;Unlocking: q}}}}}
+Assign Stmt:{z=500}
+Symbol Table: 
+q->2
+x->1
+z->400
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->20
+2->35
+Lock: 
+1->-1
+2->-1
+ID: 4
+Exe Stack:
+{Write heap {Variable name: v2Expression: Read heap:v2+1};Unlocking: q}
+Locking: q
+Symbol Table: 
+q->2
+x->1
+v1->1
+v2->2
+m->100
+Output: 
+FileTable: 
+Heap: 
+1->20
+2->35
+Lock: 
+1->-1
+2->-1
+ID: 5
+Exe Stack:
+Symbol Table: 
+q->2
+x->1
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->20
+2->35
+Lock: 
+1->-1
+2->-1
+ID: 1
+Exe Stack:
+{Locking: x;{Read heap:v1;{Unlocking: x;{Locking: q;{Read heap:v2;Unlocking: q}}}}}
+Symbol Table: 
+q->2
+x->1
+z->500
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->20
+2->35
+Lock: 
+1->-1
+2->4
+ID: 4
+Exe Stack:
+{Write heap {Variable name: v2Expression: Read heap:v2+1};Unlocking: q}
+Symbol Table: 
+q->2
+x->1
+v1->1
+v2->2
+m->100
+Output: 
+FileTable: 
+Heap: 
+1->20
+2->35
+Lock: 
+1->-1
+2->4
+ID: 1
+Exe Stack:
+{Read heap:v1;{Unlocking: x;{Locking: q;{Read heap:v2;Unlocking: q}}}}
+Locking: x
+Symbol Table: 
+q->2
+x->1
+z->500
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->20
+2->35
+Lock: 
+1->-1
+2->4
+ID: 4
+Exe Stack:
+Unlocking: q
+Write heap {Variable name: v2Expression: Read heap:v2+1}
+Symbol Table: 
+q->2
+x->1
+v1->1
+v2->2
+m->100
+Output: 
+FileTable: 
+Heap: 
+1->20
+2->35
+Lock: 
+1->-1
+2->4
+ID: 1
+Exe Stack:
+{Read heap:v1;{Unlocking: x;{Locking: q;{Read heap:v2;Unlocking: q}}}}
+Symbol Table: 
+q->2
+x->1
+z->500
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->20
+2->36
+Lock: 
+1->1
+2->4
+ID: 4
+Exe Stack:
+Unlocking: q
+Symbol Table: 
+q->2
+x->1
+v1->1
+v2->2
+m->100
+Output: 
+FileTable: 
+Heap: 
+1->20
+2->36
+Lock: 
+1->1
+2->4
+ID: 1
+Exe Stack:
+{Unlocking: x;{Locking: q;{Read heap:v2;Unlocking: q}}}
+Read heap:v1
+Symbol Table: 
+q->2
+x->1
+z->500
+v1->1
+v2->2
+Output: 
+FileTable: 
+Heap: 
+1->20
+2->36
+Lock: 
+1->1
+2->-1
+ID: 4
+Exe Stack:
+Symbol Table: 
+q->2
+x->1
+v1->1
+v2->2
+m->100
+Output: 
+FileTable: 
+Heap: 
+1->20
+2->36
+Lock: 
+1->1
+2->-1
+ID: 1
+Exe Stack:
+{Unlocking: x;{Locking: q;{Read heap:v2;Unlocking: q}}}
+Symbol Table: 
+q->2
+x->1
+z->500
+v1->1
+v2->2
+Output: 
+20
+FileTable: 
+Heap: 
+1->20
+2->36
+Lock: 
+1->1
+2->-1
+ID: 1
+Exe Stack:
+{Locking: q;{Read heap:v2;Unlocking: q}}
+Unlocking: x
+Symbol Table: 
+q->2
+x->1
+z->500
+v1->1
+v2->2
+Output: 
+20
+FileTable: 
+Heap: 
+1->20
+2->36
+Lock: 
+1->1
+2->-1
+ID: 1
+Exe Stack:
+{Locking: q;{Read heap:v2;Unlocking: q}}
+Symbol Table: 
+q->2
+x->1
+z->500
+v1->1
+v2->2
+Output: 
+20
+FileTable: 
+Heap: 
+1->20
+2->36
+Lock: 
+1->-1
+2->-1
+ID: 1
+Exe Stack:
+{Read heap:v2;Unlocking: q}
+Locking: q
+Symbol Table: 
+q->2
+x->1
+z->500
+v1->1
+v2->2
+Output: 
+20
+FileTable: 
+Heap: 
+1->20
+2->36
+Lock: 
+1->-1
+2->-1
+ID: 1
+Exe Stack:
+{Read heap:v2;Unlocking: q}
+Symbol Table: 
+q->2
+x->1
+z->500
+v1->1
+v2->2
+Output: 
+20
+FileTable: 
+Heap: 
+1->20
+2->36
+Lock: 
+1->-1
+2->1
+ID: 1
+Exe Stack:
+Unlocking: q
+Read heap:v2
+Symbol Table: 
+q->2
+x->1
+z->500
+v1->1
+v2->2
+Output: 
+20
+FileTable: 
+Heap: 
+1->20
+2->36
+Lock: 
+1->-1
+2->1
+ID: 1
+Exe Stack:
+Unlocking: q
+Symbol Table: 
+q->2
+x->1
+z->500
+v1->1
+v2->2
+Output: 
+20
+36
+FileTable: 
+Heap: 
+1->20
+2->36
+Lock: 
+1->-1
+2->1
+ID: 1
+Exe Stack:
+Symbol Table: 
+q->2
+x->1
+z->500
+v1->1
+v2->2
+Output: 
+20
+36
+FileTable: 
+Heap: 
+1->20
+2->36
+Lock: 
+1->-1
+2->-1
